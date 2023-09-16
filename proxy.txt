@@ -1,8 +1,10 @@
 # V2EX 各类网络冲浪讨论
 DOMAIN,cdn.v2ex.com
 DOMAIN-SUFFIX,v2ex.com
+
 # Surfboard Manual
 DOMAIN-SUFFIX,getsurfboard.com
+
 # Erotic comics
 DOMAIN-SUFFIX,ikanwzd.top
 DOMAIN-SUFFIX,zeimh.com
@@ -10,34 +12,35 @@ DOMAIN-SUFFIX,qxx14.com
 DOMAIN-SUFFIX,zeimh.com
 DOMAIN-SUFFIX,zwenquan.com
 DOMAIN-SUFFIX,baobaoman.com
-# github
-DOMAIN github.githubassets.com
-DOMAIN central.github.com
-DOMAIN desktop.githubusercontent.com
-DOMAIN assets-cdn.github.com
-DOMAIN camo.githubusercontent.com
-DOMAIN github.map.fastly.net
-DOMAIN github.global.ssl.fastly.net
-DOMAIN gist.github.com
-DOMAIN github.io
-DOMAIN github.com
-DOMAIN api.github.com
-DOMAIN raw.githubusercontent.com
-DOMAIN user-images.githubusercontent.com
-DOMAIN favicons.githubusercontent.com
-DOMAIN avatars5.githubusercontent.com
-DOMAIN avatars4.githubusercontent.com
-DOMAIN avatars3.githubusercontent.com
-DOMAIN avatars2.githubusercontent.com
-DOMAIN avatars1.githubusercontent.com
-DOMAIN avatars0.githubusercontent.com
-DOMAIN avatars.githubusercontent.com
-DOMAIN codeload.github.com
-DOMAIN github-cloud.s3.amazonaws.com
-DOMAIN github-com.s3.amazonaws.com
-DOMAIN github-production-release-asset-2e65be.s3.amazonaws.com
-DOMAIN github-production-user-asset-6210df.s3.amazonaws.com
-DOMAIN github-production-repository-file-5c1aeb.s3.amazonaws.com
-DOMAIN githubstatus.com
-DOMAIN github.community
-DOMAIN media.githubusercontent.com
+
+# Github
+DOMAIN,github.githubassets.com
+DOMAIN,central.github.com
+DOMAIN,desktop.githubusercontent.com
+DOMAIN,assets-cdn.github.com
+DOMAIN,camo.githubusercontent.com
+DOMAIN,github.map.fastly.net
+DOMAIN,github.global.ssl.fastly.net
+DOMAIN,gist.github.com
+DOMAIN,github.io
+DOMAIN,github.com
+DOMAIN,api.github.com
+DOMAIN,raw.githubusercontent.com
+DOMAIN,user-images.githubusercontent.com
+DOMAIN,favicons.githubusercontent.com
+DOMAIN,avatars5.githubusercontent.com
+DOMAIN,avatars4.githubusercontent.com
+DOMAIN,avatars3.githubusercontent.com
+DOMAIN,avatars2.githubusercontent.com
+DOMAIN,avatars1.githubusercontent.com
+DOMAIN,avatars0.githubusercontent.com
+DOMAIN,avatars.githubusercontent.com
+DOMAIN,codeload.github.com
+DOMAIN,github-cloud.s3.amazonaws.com
+DOMAIN,github-com.s3.amazonaws.com
+DOMAIN,github-production-release-asset-2e65be.s3.amazonaws.com
+DOMAIN,github-production-user-asset-6210df.s3.amazonaws.com
+DOMAIN,github-production-repository-file-5c1aeb.s3.amazonaws.com
+DOMAIN,githubstatus.com
+DOMAIN,github.community
+DOMAIN,media.githubusercontent.com
