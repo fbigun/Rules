@@ -135,6 +135,12 @@
 2. 在规则文件中导入相应的规则
 3. 启动客户端代理
 
+## demo
+
+- **surgio 使用的规则生成模板**
+  - demo/clash.tpl
+  - demo/surfboard.tpl
+
 ## 致谢
 
 - [@v2fly/domain-list-community](https://github.com/v2fly/domain-list-community)
