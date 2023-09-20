@@ -1,13 +1,14 @@
 #!MANAGED-CONFIG {{ downloadUrl }} interval=43200 strict=true
 # https://getsurfboard.com/docs/profile-format/overview
+# Create: {\{ new Date() }\}
 
 [General]
-dns-server = 119.29.29.29, 223.5.5.5, 9.9.9.9:9953, system
+dns-server = 119.29.29.29, 223.5.5.5, system
 doh-server = https://9.9.9.9/dns-query
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204, interval=300, tolerance=100
 internet-test-url = http://www.gstatic.cn/generate_204
-always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, stun.l.google.com
+always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, stun.l.google.com, localhost.ptlogin2.qq.com
 udp-policy-not-supported-behaviour = DIRECT
 
 [Proxy]
@@ -22,17 +23,12 @@ udp-policy-not-supported-behaviour = DIRECT
 🐟 其余策略 = select, DIRECT, 🚀 区域代理
 
 [Rule]
-RULE-SET,https://gitee.com/srcbk/rules/raw/master/oneself/direct.list,DIRECT
-RULE-SET,https://gitee.com/srcbk/rules/raw/master/oneself/reject.list,REJECT
-RULE-SET,https://gitee.com/srcbk/rules/raw/master/oneself/proxy.list,🚀 区域代理,force-remote-dns
-RULE-SET,https://gitee.com/srcbk/rules/raw/master/Clash/LocalAreaNetwork.list,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/icloud.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/apple.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/google.txt,DIRECT
-RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/telegramcidr.txt,🚀 区域代理,force-remote-dns
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/private.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/direct.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/reject.txt,REJECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.txt,🚀 区域代理
-RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/cncidr.txt,DIRECT
+RULE-SET,https://pagure.io/rules/raw/master/f/direct.txt,DIRECT
+RULE-SET,https://pagure.io/rules/raw/master/f/reject.txt,REJECT
+RULE-SET,https://pagure.io/rules/raw/master/f/proxy.txt,🚀 区域代理,force-remote-dns
+RULE-SET,https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/surge-rules/release/telegramcidr.txt,🚀 区域代理,no-resolve
+DOMAIN-SET,https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.txt,DIRECT
+DOMAIN-SET,https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/surge-rules/release/reject.txt,REJECT
+DOMAIN-SET,https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt,🚀 区域代理
+GEOIP,CN,DIRECT
 FINAL,🐟 其余策略,dns-failed
