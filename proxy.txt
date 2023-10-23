@@ -44,3 +44,6 @@ DOMAIN,github-production-repository-file-5c1aeb.s3.amazonaws.com
 DOMAIN,githubstatus.com
 DOMAIN,github.community
 DOMAIN,media.githubusercontent.com
+
+# 不良林
+DOMAIN-SUFFIX,bulianglin.com
