@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "ip_cidr": [],
+      "domain": [],
+      "domain_keyword": [],
+      "domain_suffix": [
+        "baobaoman.com",
+        "bulianglin.com",
+        "ikanwzd.top",
+        "qxx14.com",
+        "services.googleapis.cn",
+        "v2ex.com",
+        "zeimh.com",
+        "zwenquan.com"
+      ],
+      "domain_regex": []
+    }
+  ]
+}
